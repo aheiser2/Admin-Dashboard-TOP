@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div class="container">
+<body class="container">
+    <!-- <div class="container"> -->
         <nav class="nav nav-area">
             <img src="">
             <h2>Dashboard</h2>
@@ -28,148 +28,178 @@
             </ul>
 
         </nav>
-        <div class="container2 header-area">
-            <header>
-                <div class="topnav">
-                    <div class="searchbar">
-                        <form action="/action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit">Submit</button>
-                        </form>
-                        <div class="top-links">
-                            <a class="active" href="#home">Bell (Notifications)</a>
-                            <a href="#profile">Icon</a>
-                            <a href="#profile">Morgan Oakley</a>
-                        </div>
-                    </div>
+        <header class="header-area">
+                <div class="searchbar">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
-                <div class="bottomnav">
-                    <img src="">
-                    <h6>Hi there, </h6>
+                <div class="top-links">
+                    <a class="active bell" href="#home">Bell (Notifications)</a>
+                    <a class="profile-icon" href="#profile">Icon</a>
+                    <a class="profile-name" href="#profile">Morgan Oakley</a>
+                </div>
+                <div class="user-info">
+                    <img id="profile-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4R8NUhWy8g_R76u5MQ1k25VVICcynHOOkg&usqp=CAU">
+                    <p>Hi there,</p>
                     <h1>Morgan Oakley (@morgan)</h1>
-                    <div class="post-buttons">
-                        <button type="button">New</button>
-                        <button type="button">Upload</button>
-                        <button type="button">Share</button>
-                    </div>
                 </div>
-            </header>
-            <main class="container3 main-area" >
-                <h3>Your Projects</h3>
-                <section class="container4 projects-area">
-                    <article>
-                        <h5>Super Cool Project</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
-                    <article>
-                        <h5>Less Cool Project</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
-                    <article>
-                        <h5>Impossible App</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
-                    <article>
-                        <h5>Easy Peasy App</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
-                    <article>
-                        <h5>Ad Blocker</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
-                    <article>
-                        <h5>Money Maker</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
-                            assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
-                            esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
-                            soluta quae tenetur.</p>
-                            <div class="project-buttons">
-                                <button type="button">Save (Star)</button>
-                                <button type="button">Hide (Eye)</button>
-                                <button type="button">Share (Share)</button>
-                            </div>
-                    </article> 
+                <div class="post-buttons">
+                    <button type="button" class="user-button">New</button>
+                    <button type="button" class="user-button">Upload</button>
+                    <button type="button" class="user-button">Share</button>
+                </div>
+        </header>
+        <main class="main-area" >
+            <h3>Your Projects</h3>
+            <section class="projects-area">
+                <article>
+                    <h5>Super Cool Project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+                <article>
+                    <h5>Less Cool Project</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+                <article>
+                    <h5>Impossible App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+                <article>
+                    <h5>Easy Peasy App</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+                <article>
+                    <h5>Ad Blocker</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+                <article>
+                    <h5>Money Maker</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam 
+                        assumenda accusantium consequuntur delectus adipisci. Dolore quos nesciunt 
+                        esse, omnis ullam sapiente placeat ut, illo quibusdam, ducimus 
+                        soluta quae tenetur.</p>
+                        <div class="project-buttons">
+                            <button type="button" class="save-button">Save (Star)</button>
+                            <button type="button" class="hide-button">Hide (Eye)</button>
+                            <button type="button" class="share-button">Share (Share)</button>
+                        </div>
+                </article> 
+            </section>
+        </main>
+        <section class="media-area">
+            <h4>Announcements</h4>
+            <section class="announcements-area">
+                <article>
+                    <h5>Site Maintenance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptates voluptatibus commodi, sequi dolorem quis nisi...</p>
+                </article>
+                <article>
+                    <h5>Community Share Day</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptates voluptatibus commodi, sequi dolorem quis nisi...</p>
+                </article>
+                <article>
+                    <h5>Updated Privacy Policy</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptates voluptatibus commodi, sequi dolorem quis nisi...</p>
+                </article>
+            </section>
+            <h4>Trending</h4>
+            <section class="trending-area">
+                <figure>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="" style="width:50%">
+                    <figcaption>@tegan World Peace Builder</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="" style="width:50%">
+                    <figcaption>@morgan Super Cool Project</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="" style="width:50%">
+                    <figcaption>@kendall Life Changing App</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*" alt="" style="width:50%">
+                    <figcaption>@alex No Traffic Maker</figcaption>
+                </figure>
+            </section>
+        </section>
+    <!-- </div> -->
+    <!--Step 3: Nesting
 
-                </section>
-                <section class="container5 media-area">
-                    <section>Announcements</section>
-                    <section>Trending</section>
-                </section>
-            </main>
-        </div>
-    </div>
-    <!--Step 2: Layout
-
-    Start by writing out the HTML elements for the searchbar, header and main-content containers.
-    In your CSS file, apply Grid properties until you have this basic layout built.
-
-Step 3: Nesting
-
-    Taking it one section at a time, begin nesting child elements under the parent elements in the HTML. 
+    Taking it one section at a time, begin nesting child elements under the 
+    parent elements in the HTML. 
     Remember that you can keep making grid containers within grid containers.
     In the searchbar, use more grids to lay out the navigation and branding sections.
     In the header, use more grids to lay out the search bar, user info and buttons.
-    For the main-content, use more grids to lay out the projects, announcements and trending items.
-    Fill out some dummy content and placeholder images so you can position all of your grid items.
+    For the main-content, use more grids to lay out the projects, announcements and 
+    trending items.
+    Fill out some dummy content and placeholder images so you can position all of 
+    your grid items.
 
 Step 4: Gather Assets
 
-    Once you have your grid layout complete you can either recreate the dashboard example above or 
-    style your own design.
+    Once you have your grid layout complete you can either recreate the dashboard 
+    example above or style your own design.
     Check out some color palettes from Tailwind.
     All of the icons and more can be downloaded as SVGs from Material Design Icons.
-    Choose your own fonts! The design example uses Roboto, which is available with Google fonts.
+    Choose your own fonts! The design example uses Roboto, which is available with 
+    Google fonts.
 
 Step 5: Some Tips!
 
-    When building the layout, apply background colors or borders to your containers to help you 
-    visualize your grid.
+    When building the layout, apply background colors or borders to your 
+    containers to help you visualize your grid.
     It’s up to you whether to use pixels, fr units or both for your grid tracks.
-    This project does not have to be responsive, but if you’d like to you can expand or shrink 
-    the project cards section when resizing the browser window.
+    This project does not have to be responsive, but if you’d like to you 
+    can expand or shrink the project cards section when resizing the browser window.
     You don’t have to make a pixel perfect match with the design example. Consider this an 
     opportunity to practice your CSS skills with your own designs.
-    Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages to publish it to the world!
+    Don’t forget to push your finished dashboard to GitHub. Use GitHub Pages 
+    to publish it to the world!
 -->
 </body>
 </html>

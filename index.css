@@ -19,15 +19,46 @@ body {
   grid-row-end: 7;
 }
 
+li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
 .work li:first-of-type {
-  list-style-type: disc;
+  background: url("Assets/Home.svg") left center no-repeat;
+}
+
+.work li:nth-of-type(2) {
+  background: url("Assets/Account-Circle.svg") left center no-repeat;
+}
+
+.work li:nth-of-type(3) {
+  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+}
+
+.work li:nth-of-type(4) {
+  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+}
+
+.work li:nth-of-type(5) {
+  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+}
+
+.work li:nth-of-type(6) {
+  background: url("Assets/Groups.svg") left center no-repeat;
+}
+
+.support li:first-of-type {
+  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
 }
 
 .support li:nth-of-type(2) {
-  list-style-image: url("home_FILL0_wght400_GRAD0_opsz48.svg");
+  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
 }
 
-
+.support li:nth-of-type(3) {
+  background: url("Assets/Verified-User.svg") left center no-repeat;
+}
 
 h2 {
   font-size: 1.6rem;

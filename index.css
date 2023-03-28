@@ -1,93 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300&display=swap');
 
 body {
-    font-family: 'Roboto Flex', sans-serif;
-    background-color: lightgrey;
+  font-family: 'Roboto Flex', sans-serif;
+  background-color: lightgrey;
 }
 
 .container {
-    display: grid; /*inline-grid?*/
-    grid-template: repeat(6, 1fr) / repeat(5, 1fr)
-  }
+  display: grid; /*inline-grid?*/
+  grid-template: repeat(6, 1fr) / repeat(5, 1fr)
+}
 
 .nav-area {
-    background-color: rgb(31, 153, 209); 
-    color: white;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 7;
+  background-color: rgb(31, 153, 209); 
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 7;
 }
+
+.work li:first-of-type {
+  list-style-type: disc;
+}
+
+.support li:nth-of-type(2) {
+  list-style-image: url("home_FILL0_wght400_GRAD0_opsz48.svg");
+}
+
+
+
+h2 {
+  font-size: 1.6rem;
+  padding: 10px;
+  margin: 15px;
+}
+
 
 .header-area {
-    background-color: white;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    display: grid;
-    grid-template: repeat(2, 150px) / repeat(5, 1fr)
-}
-.searchbar {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  background-color: white;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template: repeat(2, 150px) / repeat(5, 1fr)
 }
 
-.top-links {
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
+.top-header {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template: 150px / 3fr 2fr
+}
+
+.searchbar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 20px;
+  overflow: hidden;
+ }
+
+.icons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.searchbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  background-color: aquamarine;
+  border: none;
+}
+
+.searchbar button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ad3a3a;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbar button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .searchbar {
+    float: none;
+  }
+  .searchbar input[type=text], .searchbar button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .searchbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+.bottom-header {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  grid-template: 150px / 3fr 2fr
 }
 
 .user-info {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    gap: 14px;
-    padding: 14px;
-    display: inline-grid;
-    grid-template: 1fr 1fr / 1fr 4fr
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  gap: 14px;
+  padding: 14px;
+  display: inline-grid;
+  grid-template: 1fr / 1fr 2fr
 }
 
 #profile-pic {
-    width: 150px;
-    height: auto;
-    grid-row-start: 1;
-    grid-row-end: 3
+  justify-self: center;
+  align-self: center;
+  width: 120px;
+  height: auto;
+  border-radius: 60px;
 }
 
-/* .user-info p {
-    grid-column-start: 2;
-    grid-row-end: 2
-} */
+.greeting {
+  grid-column-start: 2;
+}
 
 h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
     grid-column-start: 2;
 }
 
 .post-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    justify-items: center;
-    align-items: center;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 2;
-    grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
 }
 
 .main-area {
-    /* background-color: lavender; */
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 7;
+}
+
+h3 {
+  font-size: 1.4rem;
 }
 
 .projects-area {
@@ -101,21 +184,12 @@ h1 {
 }
 
 .media-area {
-    /* background-color: teal; */
     grid-column-start: 5;
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 7;
 }
   
-/* .announcements-area {
-    background-color: crimson;
-}
-
-.trending-area {
-    background-color: darkorange;
-} */
-
 .user-button {
     display: inline-block;
     background-color: rgb(31, 153, 209);
@@ -136,62 +210,21 @@ article {
     border-radius: 8px;
     font-size: 1.2rem;
     padding: 12px;
-  }
+    margin: 12px;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
 
 figure {
     background-color: white;
     text-align: center;
     color: black;
-    /* font-family: sans-serif; */
     font-size: 1rem;
     padding: 12px;
 }
 
-.searchbar {
-    overflow: hidden;
-    background-color: #e9e9e9;
-  }
-  
-  
-  /* .searchbar .search-container {
-    float: right;
-  } */
-  
-  .searchbar input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: none;
-  }
-  
-  .searchbar button {
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ad3a3a;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .searchbar button:hover {
-    background: #ccc;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .searchbar {
-      float: none;
-    }
-    .searchbar input[type=text], .searchbar button {
-      float: none;
-      display: block;
-      text-align: left;
-      width: 100%;
-      margin: 0;
-      padding: 14px;
-    }
-    .searchbar input[type=text] {
-      border: 1px solid #ccc;  
-    }
-  }
+h4 {
+  font-size: 1.4rem;
+}

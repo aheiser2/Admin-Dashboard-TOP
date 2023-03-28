@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
 <body class="container">
     <!-- <div class="container"> -->
         <nav class="nav nav-area">
             <img src="">
             <h2>Dashboard</h2>
-            <ul>
-                <li>Home</li>
+            <ul class="work">
+                <li><span class="material-symbols-outlined">
+                    home
+                    </span>Home</li>
                 <li>Profile</li>
                 <li>Messages</li>
                 <li>History</li>
@@ -21,7 +24,7 @@
                 <li>Communities</li>
             </ul>
             <br>
-            <ul>
+            <ul class="support">
                 <li>Settings</li>
                 <li>Support</li>
                 <li>Privacy</li>
@@ -29,27 +32,35 @@
 
         </nav>
         <header class="header-area">
+            <div class="top-header">
                 <div class="searchbar">
                     <form action="/action_page.php">
                         <input type="text" placeholder="Search.." name="search">
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div class="top-links">
-                    <a class="active bell" href="#home">Bell (Notifications)</a>
+                <div class="icons">
+                    <a class="active bell" href="#home"><span class="material-symbols-outlined">
+                        notifications_active
+                        </span></a>
                     <a class="profile-icon" href="#profile">Icon</a>
                     <a class="profile-name" href="#profile">Morgan Oakley</a>
                 </div>
+            </div>
+            <div class="bottom-header">
                 <div class="user-info">
                     <img id="profile-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO4R8NUhWy8g_R76u5MQ1k25VVICcynHOOkg&usqp=CAU">
-                    <p>Hi there,</p>
-                    <h1>Morgan Oakley (@morgan)</h1>
+                    <div class="greeting">
+                        <p>Hi there,</p>
+                        <h1>Morgan Oakley (@morgan)</h1>
+                    </div>
                 </div>
                 <div class="post-buttons">
                     <button type="button" class="user-button">New</button>
                     <button type="button" class="user-button">Upload</button>
                     <button type="button" class="user-button">Share</button>
                 </div>
+            </div>
         </header>
         <main class="main-area" >
             <h3>Your Projects</h3>

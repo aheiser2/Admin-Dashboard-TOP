@@ -33,15 +33,15 @@ li {
 }
 
 .work li:nth-of-type(3) {
-  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+  background: url("Assets/Messages.svg") left center no-repeat;
 }
 
 .work li:nth-of-type(4) {
-  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+  background: url("Assets/History.svg") left center no-repeat;
 }
 
 .work li:nth-of-type(5) {
-  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+  background: url("Assets/Assignment.svg") left center no-repeat;
 }
 
 .work li:nth-of-type(6) {
@@ -49,15 +49,40 @@ li {
 }
 
 .support li:first-of-type {
-  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+  background: url("Assets/Settings.svg") left center no-repeat;
 }
 
 .support li:nth-of-type(2) {
-  background: url("home_FILL0_wght400_GRAD0_opsz48.svg") left center no-repeat;
+  background: url("Assets/HelpCenter.svg") left center no-repeat;
 }
 
 .support li:nth-of-type(3) {
   background: url("Assets/Verified-User.svg") left center no-repeat;
+}
+
+.project-buttons > button {
+  border: green solid 2px;
+  padding: 20px;
+  width: 45px;
+  height: 45px;
+}
+
+.save-button {
+  background-color: rgb(31, 153, 209);
+  color: white; 
+  background: url("Assets/Star.svg") center no-repeat;
+}
+
+.hide-button {
+  background-color: rgb(31, 153, 209);
+  color: white; 
+  background: url("Assets/Eye.svg") center no-repeat;
+}
+
+.share-button {
+  background-color: rgb(31, 153, 209);
+  color: white; 
+  background: url("Assets/Share1.svg") center no-repeat;
 }
 
 h2 {

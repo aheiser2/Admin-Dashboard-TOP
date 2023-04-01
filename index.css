@@ -1,103 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300&display=swap');
 
+/*The whole page*/
 body {
+  margin: none;
+  padding: none;
   font-family: 'Roboto Flex', sans-serif;
   background-color: lightgrey;
-}
-
-.container {
   display: grid; /*inline-grid?*/
-  grid-template: 200px auto / 300px 2fr 1fr
-  /*repeat(6, 1fr) / repeat(5, 1fr)*/
+  grid-template: 200px auto / 280px 2fr 1fr
 }
 
+/*Navigation area on the side*/
 .nav-area {
   background-color: rgb(31, 153, 209); 
   color: white;
-  /* grid-column-start: 1;
-  grid-column-end: 2; */
   grid-row-start: 1;
   grid-row-end: 3; 
 }
 
-li {
-  list-style-type: none;
-  font-weight: bold;
-  padding: 10px 0px 10px 30px;
-}
-
-.work li:first-of-type {
-  background: url("Assets/Home.svg") left center no-repeat;
-}
-
-.work li:nth-of-type(2) {
-  background: url("Assets/Account-Circle.svg") left center no-repeat;
-}
-
-.work li:nth-of-type(3) {
-  background: url("Assets/Messages.svg") left center no-repeat;
-}
-
-.work li:nth-of-type(4) {
-  background: url("Assets/History.svg") left center no-repeat;
-}
-
-.work li:nth-of-type(5) {
-  background: url("Assets/Assignment.svg") left center no-repeat;
-}
-
-.work li:nth-of-type(6) {
-  background: url("Assets/Groups.svg") left center no-repeat;
-}
-
-.support li:first-of-type {
-  background: url("Assets/Settings.svg") left center no-repeat;
-}
-
-.support li:nth-of-type(2) {
-  background: url("Assets/HelpCenter.svg") left center no-repeat;
-}
-
-.support li:nth-of-type(3) {
-  background: url("Assets/Verified-User.svg") left center no-repeat;
-}
-
-.project-buttons {
-  float: right;
-}
-
-.project-buttons > button {
-  border: green solid 2px;
-  padding: 20px;
-  width: 45px;
-  height: 45px;
-}
-
-.save-button {
-  background-color: rgb(31, 153, 209);
-  color: white; 
-  background: url("Assets/Star.svg") center no-repeat;
-}
-
-.hide-button {
-  background-color: rgb(31, 153, 209);
-  color: white; 
-  background: url("Assets/Eye.svg") center no-repeat;
-}
-
-.share-button {
-  background-color: rgb(31, 153, 209);
-  color: white; 
-  background: url("Assets/Share1.svg") center no-repeat;
-}
-
 h2 {
   font-size: 1.6rem;
-  padding: 10px;
+  padding: 15px;
   margin: 15px;
+  display: inline-block;
 }
 
+.trello {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
 
+/*Header area at the top*/
 .header-area {
   background-color: white;
   grid-column-start: 2;
@@ -106,6 +40,7 @@ h2 {
   grid-template: 60px 140px / 3fr 2fr
 }
 
+/*Top portion of header*/
 .top-header {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -113,17 +48,6 @@ h2 {
   grid-row-end: 2;
   display: grid;
   grid-template: 70px / 7fr 3fr
-}
-
-.icons {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  align-items: center;
 }
 
 .searchbar {
@@ -135,48 +59,44 @@ h2 {
   overflow: hidden;
  }
 
+ form {
+  display: grid;
+  grid-template: 70px / 80px auto;
+ }
+
 .searchbar input[type=text] {
+  width: 80%;
+  height: 30px;
   padding: 6px;
   margin-top: 10px;
   font-size: 17px;
-  width: 80%;
-  background-color: aquamarine;
+  background-color: lightgray;
   border: none;
   border-radius: 20px;
 }
 
-.searchbar button {
-  border: none;
-  padding: 0px;
-  width: 50px;
-  height: 50px;
-  margin: 10px 10px 10px 20px;
-  background: url("Assets/Search.svg") center no-repeat;
-  cursor: pointer;
-  float: left;
+.icons {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  align-items: center;
+  padding: 10px 100px 0px 0px;
 }
 
-.searchbar button:hover {
-  background: #ccc;
+#profile-pic2 {
+  justify-self: center;
+  align-self: center;
+  width: 65px;
+  height: auto;
+  margin: 0px 10px;
+  border-radius: 60px;
 }
 
-/* @media screen and (max-width: 600px) {
-  .searchbar {
-    float: none;
-  }
-  .searchbar input[type=text], .searchbar button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .searchbar input[type=text] {
-    border: 1px solid #ccc;  
-  }
-} */
-
+/*Bottom portion of header*/
 .bottom-header {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -223,15 +143,11 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
+  padding-right: 50px;
 }
 
-/* .main-area {
-    grid-column-start: 2;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 7;
-} */
 
+/*Project area in the middle*/
 h3 {
   font-size: 1.4rem;
 }
@@ -246,47 +162,15 @@ h3 {
   grid-template-columns: repeat(2, 1fr);
 }
 
-/* .media-area {
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 3;
-} */
-  
-.user-button {
-  display: inline-block;
-  background-color: rgb(31, 153, 209);
-  color: white; 
-  border: none;
-  padding: 8px 24px;
-  width: 90px;
-  text-align: center;
-  font-size: 16px;
-  border-radius: 25px;
-}
-
-article {
-  background-color: white;
-  text-align: left;
-  border-left: orange solid 8px;
-  color: black;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  padding: 18px;
-  margin: 18px;
-  height: 250px;
-}
-
-article > p {
-  font-size: 0.9rem;
-  height: 150px;
-  overflow: scroll;
-}
-
 h5 {
   margin: 10px 5px 5px;
   font-size: 1.1rem;
   font-weight: bold;
+}
+
+/*Announcements and Trending area on the right side*/
+h4 {
+  font-size: 1.4rem;
 }
 
 .announcements-area {
@@ -298,10 +182,10 @@ h5 {
   font-size: 0.9rem;
   padding: 24px;
   margin: 24px;
-  /* height: 250px; */
 }
 
 .announcements-area > p {
+  padding-bottom: 10px;
   border-bottom: solid 1px gray;
 }
 
@@ -314,14 +198,4 @@ h5 {
   font-size: 0.9rem;
   padding: 24px;
   margin: 24px;
-  /* height: 250px; */
-}
-
-figure {
-  background-color: blue;
-  padding: 12px;
-}
-
-h4 {
-  font-size: 1.4rem;
 }

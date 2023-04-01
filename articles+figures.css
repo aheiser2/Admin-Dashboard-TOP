@@ -1,0 +1,24 @@
+article {
+    background-color: white;
+    text-align: left;
+    border-left: orange solid 8px;
+    color: black;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 18px;
+    margin: 18px;
+    height: 250px;
+}
+
+article > p {
+    font-size: 0.9rem;
+    height: 150px;
+    overflow: scroll;
+}
+
+
+figure {
+    background-color: blue;
+    padding: 12px;
+  }
+  

@@ -1,0 +1,102 @@
+/*Dashboard Area*/
+li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 15px 0px 15px 40px;
+  }
+  
+  .work li:first-of-type {
+    background: url("Assets/Home.svg") left center no-repeat;
+  }
+  
+  .work li:nth-of-type(2) {
+    background: url("Assets/Account-Circle.svg") left center no-repeat;
+  }
+  
+  .work li:nth-of-type(3) {
+    background: url("Assets/Messages.svg") left center no-repeat;
+  }
+  
+  .work li:nth-of-type(4) {
+    background: url("Assets/History.svg") left center no-repeat;
+  }
+  
+  .work li:nth-of-type(5) {
+    background: url("Assets/Assignment.svg") left center no-repeat;
+  }
+  
+  .work li:nth-of-type(6) {
+    background: url("Assets/Groups.svg") left center no-repeat;
+  }
+  
+  .support li:first-of-type {
+    background: url("Assets/Settings.svg") left center no-repeat;
+  }
+  
+  .support li:nth-of-type(2) {
+    background: url("Assets/HelpCenter.svg") left center no-repeat;
+  }
+  
+  .support li:nth-of-type(3) {
+    background: url("Assets/Verified-User.svg") left center no-repeat;
+  }
+
+  /*Buttons on each article*/
+  .project-buttons {
+    float: right;
+  }
+  
+  .project-buttons > button {
+    border: green solid 2px;
+    padding: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .save-button {
+    background-color: rgb(31, 153, 209);
+    color: white; 
+    background: url("Assets/Star.svg") center no-repeat;
+  }
+  
+  .hide-button {
+    background-color: rgb(31, 153, 209);
+    color: white; 
+    background: url("Assets/Eye.svg") center no-repeat;
+  }
+  
+  .share-button {
+    background-color: rgb(31, 153, 209);
+    color: white; 
+    background: url("Assets/Share1.svg") center no-repeat;
+  }
+
+  /*The looking glass icon button*/
+  .searchbar button {
+    border: none;
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px 10px 20px;
+    background: url("Assets/Search.svg") center no-repeat;
+    cursor: pointer;
+    float: left;
+  }
+  
+  .searchbar button:hover {
+    background: #ccc;
+  }
+
+  /*Header buttons for new posts*/
+  .user-button {
+    display: inline-block;
+    background-color: rgb(31, 153, 209);
+    color: white; 
+    border: none;
+    padding: 10px 32px;
+    width: auto;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 25px;
+  }

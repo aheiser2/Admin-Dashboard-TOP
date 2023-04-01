@@ -6,7 +6,7 @@ body {
   padding: 0px;
   font-family: 'Roboto Flex', sans-serif;
   background-color: lightgrey;
-  display: grid; /*inline-grid?*/
+  display: grid; 
   grid-template: 200px auto / 280px 3fr 1fr
 }
 
@@ -25,7 +25,7 @@ h2 {
   display: inline-block;
 }
 
-.trello {
+#dashboard-icon {
   position: relative;
   top: 20px;
   left: 20px;
@@ -74,10 +74,6 @@ h2 {
   background-color: lightgray;
   border: none;
   border-radius: 20px;
-}
-
-.searchbar input[type=text]:focus {
-  border: orange
 }
 
 .icons {

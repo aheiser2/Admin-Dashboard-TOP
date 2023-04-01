@@ -2,12 +2,12 @@
 
 /*The whole page*/
 body {
-  margin: none;
-  padding: none;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Roboto Flex', sans-serif;
   background-color: lightgrey;
   display: grid; /*inline-grid?*/
-  grid-template: 200px auto / 280px 2fr 1fr
+  grid-template: 200px auto / 280px 3fr 1fr
 }
 
 /*Navigation area on the side*/
@@ -37,7 +37,8 @@ h2 {
   grid-column-start: 2;
   grid-column-end: 4;
   display: grid;
-  grid-template: 60px 140px / 3fr 2fr
+  grid-template: 60px 140px / 3fr 2fr;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
 }
 
 /*Top portion of header*/
@@ -67,12 +68,16 @@ h2 {
 .searchbar input[type=text] {
   width: 80%;
   height: 30px;
-  padding: 6px;
+  padding: 6px 15px;
   margin-top: 10px;
   font-size: 17px;
   background-color: lightgray;
   border: none;
   border-radius: 20px;
+}
+
+.searchbar input[type=text]:focus {
+  border: orange
 }
 
 .icons {
@@ -94,6 +99,12 @@ h2 {
   height: auto;
   margin: 0px 10px;
   border-radius: 60px;
+}
+
+.profile-icon, .profile-name, .bell {
+  color: rgb(31, 153, 209);
+  text-decoration: none;
+  margin: 0px 10px;
 }
 
 /*Bottom portion of header*/
@@ -126,12 +137,9 @@ h2 {
   margin-left: 20px;
 }
 
-.greeting {
-  grid-column-start: 2;
-}
-
 h1 {
-  font-size: 1.5rem;
+  font-size: 2vw;
+  font-weight: bold;
 }
 
 .post-buttons {
@@ -150,29 +158,24 @@ h1 {
 /*Project area in the middle*/
 h3 {
   font-size: 1.4rem;
+  padding-left: 24px;
 }
 
 .projects-area {
-  resize: both;
-  overflow: auto;
   display: grid;
-  gap: 4px;
-  padding: 4px;
+  gap: 24px;
+  padding-left: 24px;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
 
 h5 {
-  margin: 10px 5px 5px;
+  margin: 10px 0px 5px;
   font-size: 1.1rem;
   font-weight: bold;
 }
 
-/*Announcements and Trending area on the right side*/
-h4 {
-  font-size: 1.4rem;
-}
-
+/*Media area on the right side*/
 .announcements-area {
   background-color: white;
   text-align: left;
@@ -181,12 +184,21 @@ h4 {
   border-radius: 8px;
   font-size: 0.9rem;
   padding: 24px;
-  margin: 24px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .announcements-area > p {
   padding-bottom: 10px;
+  font-size: 0.7rem;
+}
+
+.announcements-area > p:not(:last-child) {
   border-bottom: solid 1px gray;
+}
+
+.announcements-area > h5 {
+  font-size: 0.9rem;
 }
 
 .trending-area {
@@ -196,6 +208,6 @@ h4 {
   color: black;
   border-radius: 8px;
   font-size: 0.9rem;
-  padding: 24px;
   margin: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }

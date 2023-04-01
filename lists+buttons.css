@@ -48,27 +48,22 @@ li {
   }
   
   .project-buttons > button {
-    border: green solid 2px;
+    border: none;
     padding: 20px;
     width: 45px;
     height: 45px;
+    cursor: pointer;
   }
   
   .save-button {
-    background-color: rgb(31, 153, 209);
-    color: white; 
     background: url("Assets/Star.svg") center no-repeat;
   }
   
   .hide-button {
-    background-color: rgb(31, 153, 209);
-    color: white; 
     background: url("Assets/Eye.svg") center no-repeat;
   }
   
   .share-button {
-    background-color: rgb(31, 153, 209);
-    color: white; 
     background: url("Assets/Share1.svg") center no-repeat;
   }
 
@@ -94,9 +89,11 @@ li {
     background-color: rgb(31, 153, 209);
     color: white; 
     border: none;
+    margin-top: 25px;
     padding: 10px 32px;
     width: auto;
     text-align: center;
     font-size: 16px;
     border-radius: 25px;
+    cursor: pointer;
   }
